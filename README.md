@@ -4,7 +4,7 @@ Zola is a social media for Vietnamese.
 
 ## Demo
 
-#### Link to test with web version: https://zola.vercel.app/
+#### Link to test with web version: https://zola-client.vercel.app
 
 ## Demo
 
