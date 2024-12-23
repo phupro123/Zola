@@ -1,0 +1,23 @@
+{
+  "name": "zola",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-socket": "npm install --prefix socket",
+    "install-client": "npm install --prefix client",
+    "install-admin": "npm install --prefix admin",
+    "install": "npm run install-server & npm run install-socket & npm run install-client & npm run install-admin",
+    "server": "npm start --prefix server",
+    "client": "npm run dev --prefix client",
+    "socket": "npm start --prefix socket",
+    "start": "npm run server & npm run socket & npm run client",
+    "dev": "npm run dev --prefix server & npm run watch --prefix socket & npm run client"
+  },
+  "author": "Zola",
+  "license": "UTE",
+  "dependencies": {
+    "socket.io-client": "^4.5.4",
+    "zustand": "^4.1.4"
+  }
+}
